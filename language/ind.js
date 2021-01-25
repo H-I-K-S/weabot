@@ -15,23 +15,23 @@ exports.lvloff = () => {
 }
 
 exports.lvlnul = () => {
-	return`*LEVELMU MASIH KOSONG*`
+	return`*LEVEL KAMU MASIH KOSONG*`
 }
 
 exports.lvlnoon = () => {
-	return`*LEVEL DI GRUB BELUM DI AKTIFKAN*`
+	return`*LEVEL DI GROUP BELUM DI AKTIFKAN*`
 }
 
 exports.noregis = () => {
-	return`*「 BELUM DAFTAR 」*\n\n*cara daftar ${prefix}daftar nama|umur* \n*contoh ${prefix}daftar affis|17*`
+	return`*「 REGISTRASI 」*\n\n*Cara Daftar ${prefix}daftar nama|umur* \n*contoh ${prefix}daftar Hiks|17*`
 }
 
 exports.rediregis = () => {
-	return`*「 SUDAH DAFTAR 」*\n\n*kamu sudah terdaftar di database bot*`
+	return`*「 DONE REGISTERASI 」*\n\n*Kamu sudah terdaftar di dalam database bot*`
 }
 
 exports.stikga = () => {
-	return`*yah gagal coba ulangi beberapa saat lagi*`
+	return`*yahh gagal coba ulangi beberapa saat lagi*`
 }
 
 exports.linkga = () => {
@@ -75,11 +75,11 @@ exports.clears = () => {
 }
 
 exports.pc = () => {
-	return`*「 REGISTRASI 」*\n\nuntuk mengetahui apa kamu sudah terdaftar silahkah check message yang saya kirim \n\nNOTE:\n*jika kamu belum mendapatkan pesan. berarti kamu belum menyimpan nomer bot*`
+	return`*「 REGISTRASI 」*\n\nUntuk mengetahui apakah kamu Sudah Terdaftar Silahkah Check Message yang saya kirim \n\nNOTE:\n*Jika kamu belum mendapatkan pesan. berarti kamu belum menyimpan nomer Bot*`
 }
 
 exports.registered = (namaUser, umurUser, serialUser, time, sender) => {
-	return`*「 DATA NEGARA 」*\n\nkamu sudah terdaftar dengan data \n\n┏━⊱nama\n┗⊱${namaUser}\n┏━⊱nomer\n┗⊱wa.me/${sender.split("@")[0]}\n┏━⊱umur\n┗⊱${umurUser}\n┏━⊱waktu pendaftaran\n┗⊱${time}\n\n┏━❉ *NS* ❉━\n┣⊱${serialUser}\n┗⊱NOTE : jangan sampai lupa nomer ini karena ini penting:v`
+	return`*「 DATA NEGARA 」*\n\nKamu sudah terdaftar dengan data \n\n╭──❍ Nama\n╰──❍ ${namaUser}\n╭──❍ Nomer\n╰──❍ wa.me/${sender.split("@")[0]}\n╭──❍ Umur\n╰──❍ ${umurUser}\n╭──❍ Waktu pendaftaran\n╰──❍ ${time}\n\n╭──❍ *SN* ❍──\n┣⊱${serialUser}\n╰──❍ NOTE : Jangan sampai lupa nomer nya karena itu penting:v`
 }
 
 exports.cmdnf = (prefix, command) => {
@@ -87,7 +87,7 @@ exports.cmdnf = (prefix, command) => {
 }
 
 exports.owneresce = (pushname) => {
-	return`*maaf tapi ${pushname} bukan owner script*`
+	return`*Maaf tapi ${pushname} bukan owner sc*`
 }
 
 exports.reglevelaha = (command, pushname, getLevelingLevel, sender, aha) => {
