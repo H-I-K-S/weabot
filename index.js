@@ -41,10 +41,10 @@ const vcard = 'BEGIN:VCARD\n'
 prefix = '.'
 blocked = []   
 limitawal = '20'
-cr = '*BOT IS VERIFIED*'
+cr = '*HIKS BOT IS VERIFIED*'
 
 /******** OWNER NUMBER**********/
-const ownerNumber = ["6287714745440@s.whatsapp.net","6287714745440@s.whatsapp.net"] 
+const ownerNumber = ["6287714745440@s.whatsapp.net","16692094570@s.whatsapp.net"] 
 /************************************/
 
        
@@ -334,11 +334,11 @@ client.on('group-participants-update', async (anu) => {
 			const groupDesc = isGroup ? groupMetadata.desc : ''
             const groupAdmins = isGroup ? getGroupAdmins(groupMembers) : ''
             
-            /************** SCURITY FEATURE ************/
-            const isEventon = isGroup ? event.includes(from) : false
-            const isRegistered = checkRegisteredUser(sender)
-            const isBotGroupAdmins = groupAdmins.includes(botNumber) || false
-            const isLevelingOn = isGroup ? _leveling.includes(from) : false
+                                /************** SCURITY FEATURE ************/
+                        const isEventon = isGroup ? event.includes(from) : false
+                        const isRegistered = checkRegisteredUser(sender)
+                        const isBotGroupAdmins = groupAdmins.includes(botNumber) || false
+                        const isLevelingOn = isGroup ? _leveling.includes(from) : false
 			const isGroupAdmins = groupAdmins.includes(sender) || false
 			const isWelkom = isGroup ? welkom.includes(from) : false
 			const isNsfw = isGroup ? nsfw.includes(from) : false
@@ -366,7 +366,7 @@ client.on('group-participants-update', async (anu) => {
 		    const sendPtt = (teks) => {
 		    client.sendMessage(from, audio, mp3, {quoted:mek})
 		    }
-	        /*****************END SCURITY FEATURE ********/
+	                        /*****************END SCURITY FEATURE ********/
 			
 			
 			
@@ -394,7 +394,7 @@ client.on('group-participants-update', async (anu) => {
                     for (let lmt of _limit) {
                         if (lmt.id === sender) {
                             let limitCounts = limitawal - lmt.limit
-                            if (limitCounts <= 0) return client.sendMessage(from,`Limit request anda sudah habis\n\n_Note : Limit akan direset setiap jam 21:00!_`, text,{ quoted: mek})
+                            if (limitCounts <= 0) return client.sendMessage(from,`Limit Kamu sudah habis\n\n_Note : Limit akan direset setiap jam 21:00!_`, text,{ quoted: mek})
                             client.sendMessage(from, ind.limitcount(limitCounts), text, { quoted : mek})
                             found = true
                         }
