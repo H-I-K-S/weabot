@@ -199,7 +199,6 @@ exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp
 
 ╭──「 *GROUP MENU*」❍──
 ├❍ *${prefix}hidetag*
-├❍ *${prefix}grouplist*
 ├❍ *${prefix}limit*
 ├❍ *${prefix}level*
 ├❍ *${prefix}linkgc*
