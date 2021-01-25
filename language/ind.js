@@ -142,6 +142,12 @@ exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp
 ├❍ Inget beri jeda 5 Detik.
 ╰──────────────────
 
+
+
+> Have Fun And Have a Nice Day! <
+
+
+
 ╭──「 *MAKER MENU*」❍──
 ├❍ *${prefix}sticker*
 ├❍ *${prefix}vinta*
@@ -198,6 +204,9 @@ exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp
 ├❍ *${prefix}level*
 ├❍ *${prefix}linkgc*
 ├❍ *${prefix}tagall*
+├❍ *${prefix}otagall*
+├❍ *${prefix}otagall2*
+├❍ *${prefix}mentionall*
 ├❍ *${prefix}setpp*
 ├❍ *${prefix}add*
 ├❍ *${prefix}kick*
@@ -227,7 +236,7 @@ exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp
 ├❍ *${prefix}clone*
 ├❍ *${prefix}setppbot*
 ╰───────────────────
-╭─────「 *MUTUALAN?*」❍──
+╭─────「 *Gamaksa*」────
 ├❍ instagram.com/itspapoy
 ╰────  ⸨ *Hiks Bot* ⸩  ─────╯
 `
@@ -235,7 +244,8 @@ exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp
 
 exports.levelup = (pushname, sender, getLevelingXp,  getLevel, getLevelingLevel) => {
 	return`
-╭──「°❀ 〘 SELAMAT 〙 ❀°」
+╭──「°❀ 〘 KTP 〙 ❀°」
+├❏ *Kartu Tanda Pemakai*
 ├❍ *Nama*  : ${pushname}
 ├❍ *Nomer* : wa.me/${sender.split("@")[0]}
 ├❍ *Xp*    : ${getLevelingXp(sender)}
