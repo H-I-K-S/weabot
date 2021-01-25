@@ -1,7 +1,7 @@
 {
-  "name": "XBOT",
+  "name": "weabot",
   "version": "1.0.0",
-  "description": "Xbot for whatsapp online with termux",
+  "description": "weabot for whatsapp recommended with termux",
   "main": "index.js",
   "directories": {
     "lib": "lib"
@@ -13,15 +13,15 @@
   "keywords": [
     "k"
   ],
-  "author": "affis junianto",
+  "author": "HIKS",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/affisjunianto/botwasapv2.git"
+    "url": "git+https://github.com/H-I-K-S/weabot.git"
   },
   "bugs": {
-    "url": "https://github.com/affisjunianto/botwasapv2/issues"
+    "url": "https://github.com/H-I-K-S/weabot/issues"
   },
-"homepage": "https://github.com/affisjunianto/botwasapv2/readme",
+"homepage": "https://github.com/H-I-K-S/weabot/readme",
 "license": "ISC",
 "dependencies": {
     "@adiwajshing/baileys": "^3.3.0",
