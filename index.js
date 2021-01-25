@@ -253,7 +253,7 @@ function kyun(seconds){
 const client = new WAConnection()
    client.on('qr', qr => {
    qrcode.generate(qr, { small: true })
-   console.log(color('[','white'),color('!','red'),color(']','white'),color('QR CODE Ready Scan Cepet','white'),color('GITHUB','green'),color('BY','white'),color('H-I-K-S','green'))
+   console.log(color('[','white'),color('!','red'),color(']','white'),color('QR CODE is Ready SCAN NOW!','white'),color('GITHUB','green'),color('BY','white'),color('H-I-K-S','green'))
 })
 
 client.on('credentials-updated', () => {
@@ -277,7 +277,7 @@ client.on('group-participants-update', async (anu) => {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `Hallo @${num.split('@')[0]}\Selamat datang di group *${mdata.subject}* yang betah ya di sini`
+				teks = `[ *𝐒𝐞𝐥𝐚𝐦𝐚𝐭 𝐝𝐚𝐭𝐚𝐧𝐠 𝐝𝐢 𝐆𝐫𝐨𝐮𝐩 𝐲𝐠 𝐏𝐞𝐧𝐮𝐡 𝐃𝐫𝐚𝐦𝐚 ${mdata.subject}* ]\n*❉────────────❉*\n@${num.split('@')[0]} ɪɴᴛʀᴏ/ᴅɪᴋɪᴄᴋツ:\nᜰ꙰ꦿ➢𝐍𝐚𝐦𝐚:\nᜰ꙰ꦿ➢𝐔𝐦𝐮𝐫:\nᜰ꙰ꦿ➢𝐀𝐬𝐤𝐨𝐭:\nᜰ꙰ꦿ➢𝐂𝐰𝐤 𝐚𝐩𝐚 𝐂𝐰𝐤:\nᜰ꙰ꦿ➢𝐃𝐨𝐢??:\nᜰ꙰ꦿ➢𝐁𝐚𝐜𝐚 𝐃𝐞𝐬𝐜 𝐲𝐚𝐚 𝐚𝐭𝐰 𝐌𝐚𝐮 𝐝𝐢 𝐒𝐚𝐧𝐭𝐞𝐭? 𝐌𝐨𝐠𝐚 𝐛𝐞𝐭𝐚𝐡 𝐝𝐢 𝐠𝐫𝐮𝐩ツ\n*❉────────────❉*\nᜰ꙰ꦿ➢ᴮᵗʷ ˢᵛ ⁿᵒ ᴬᵈᵐⁱⁿ ˢᵐᵃ ᵇᵒᵗ ʸᵃᵃ ᵐᵃᵃᶜⁱ><`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			} else if (anu.action == 'remove') {
@@ -287,7 +287,7 @@ client.on('group-participants-update', async (anu) => {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `akhirnya beban group berkurang 𝟭,bye bye🥳 @${num.split('@')[0]} jasamu akan di kubur dalam²`
+				teks = `(っ◔◡◔)っ𝗦𝗮𝘆𝗼𝗻𝗮𝗿𝗮𝗮𝗮👋🏻 @${num.split('@')[0]} 𝘠𝘢𝘯𝘨 𝘬𝘦𝘭𝘶𝘢𝘳 𝘯𝘪𝘵𝘪𝘱 𝘴𝘦𝘣𝘭𝘢𝘲 𝘺𝘢𝘢 𝘣𝘵𝘸 𝘮𝘸𝘩𝘩𝘦ᥬ😉᭄`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			}
@@ -474,11 +474,11 @@ client.on('group-participants-update', async (anu) => {
 				payout = body.slice(10)
 				const koinPerlimit = 1000
 				const total = koinPerlimit * payout
-				if ( checkATMuser(sender) <= total) return reply(`maaf uang kamu belum mencukupi. silahkan kumpulkan dan beli nanti`)
+				if ( checkATMuser(sender) <= total) return reply(`Maaf uang kamu belum mencukupi. Silahkan Kumpulkan dulu dan Beli Nanti`)
 				if ( checkATMuser(sender) >= total ) {
 					confirmATM(sender, total)
 					bayarLimit(sender, payout)
-					await reply(`*「 PEMBAYARAN BERHASIL 」*\n\n*pengirim* : Admin\n*penerima* : ${pushname}\n*nominal pembelian* : ${payout} \n *harga limit* : ${koinPerlimit}/limit\n *sisa uang mu* : ${checkATMuser(sender)}\n\nproses berhasil dengan nomer pembayaran\n${createSerial(15)}`)
+					await reply(`*「 PEMBAYARAN BERHASIL 」*\n\n*Pengirim* : Admin\n*Penerima* : ${pushname}\n*Nominal Pembelian* : ${payout} \n *Harga Limit* : ${koinPerlimit}/limit\n *Sisa Uang Kamu* : ${checkATMuser(sender)}\n\nProses Berhasil dengan Nomer Pembayaran\n${createSerial(15)}`)
 				} 
 				break
 				case 'limit':
@@ -819,11 +819,11 @@ client.on('group-participants-update', async (anu) => {
                       const one = 999999999
                       addLevelingXp(sender, one)
                       addLevelingLevel(sender, 99)
-                      reply(`karena anda owner kami dari team bot mengirim ${one}Xp untuk anda`)
+                      reply(`Karena anda Owner Kami Dari Team Bot Mengirim ${one}Xp Untuk Anda`)
                       }else{
                       const mining = Math.ceil(Math.random() * 10000)
                       addLevelingXp(sender, mining)
-                      await reply(`*selamat* ${pushname} kamu mendapatkan *${mining}Xp*`)
+                      await reply(`*SELAMAT* ${pushname} Kamu Mendapatkan *${mining}Xp*`)
                       }
                     await limitAdd(sender)
 					break
@@ -888,7 +888,7 @@ client.on('group-participants-update', async (anu) => {
                 const userXp = getLevelingXp(sender)
                 if (userLevel === undefined && userXp === undefined) return reply(ind.lvlnul())
                 const requiredXp = 5000 * (Math.pow(2, userLevel) - 1)
-                resul = `┏━━❉ *LEVEL* ❉━━\n┣⊱ *Nama* : ${pushname}\n┣⊱ Nomor : wa.me/${sender.split("@")[0]}\n┣⊱ User XP :  ${userXp}/${requiredXp}\n┣⊱ User Level : ${userLevel}\n┗━━━━━━━━━━━━`
+                resul = `╭──「°❀ *LEVEL* ❀°」──\n├❍ *Nama* : ${pushname}\n├❍ Nomor : wa.me/${sender.split("@")[0]}\n├❍ User XP :  ${userXp}/${requiredXp}\n├❍ User Level : ${userLevel}\n╰────────────`
                client.sendMessage(from, resul, text, { quoted: mek})
                 .catch(async (err) => {
                         console.error(err)
@@ -898,7 +898,7 @@ client.on('group-participants-update', async (anu) => {
 				case 'info':
 					me = client.user
 					uptime = process.uptime()
-					teks = `*Nama bot* : ${me.name}\n*OWNER* : *AMPIBI*\n*AUTHOR* : AMPIBI\n*Nomor Bot* : @${me.jid.split('@')[0]}\n*Prefix* : ${prefix}\n*Total Block Contact* : ${blocked.length}\n*The bot is active on* : ${kyun(uptime)}`
+					teks = `*Nama bot* : ${me.name}\n*OWNER* : *Fadhli*\n*AUTHOR* : Fadhli\n*Nomor Bot* : @${me.jid.split('@')[0]}\n*Prefix* : ${prefix}\n*Total Block Contact* : ${blocked.length}\n*The bot is active on* : ${kyun(uptime)}`
 					buffer = await getBuffer(me.imgUrl)
 					client.sendMessage(from, buffer, image, {caption: teks, contextInfo:{mentionedJid: [me.jid]}})
 					break
@@ -1202,6 +1202,42 @@ client.on('group-participants-update', async (anu) => {
 					}
 					mentions(teks, members_id, true)
 					break
+                                case 'otagall':
+					if (!isGroup) return reply(mess.only.group)
+					if (!isGroupAdmins) return reply(mess.only.admin)
+					members_id = []
+					teks = (args.length > 1) ? body.slice(8).trim() : ''
+					teks += '\n\n'
+					for (let mem of groupMembers) {
+						teks += `*🚀* @${mem.jid.split('@')[0]}\n`
+						members_id.push(mem.jid)
+					}
+					mentions(teks, members_id, true)
+					break
+                                case 'mentionall':
+					if (!isGroup) return reply(mess.only.group)
+					if (!isGroupAdmins) return reply(mess.only.admin)
+					members_id = []
+					teks = (args.length > 1) ? body.slice(8).trim() : ''
+					teks += '\n'
+					for (let mem of groupMembers) {
+						teks += `╠➥ @${mem.jid.split('@')[0]}\n`
+						members_id.push(mem.jid)
+					}
+					mentions('╔══❏〘 Mention|All 〙❏══'+teks+'╚═❏〘 Hiks Bot 〙', members_id, true)
+					break
+                                case 'otagall2':
+					if (!isGroup) return reply(mess.only.group)
+					if (!isGroupAdmins) return reply(mess.only.admin)
+					members_id = []
+					teks = (args.length > 1) ? body.slice(8).trim() : ''
+					teks += '\n'
+					for (let mem of groupMembers) {
+						teks += `╠❏🐊 @${mem.jid.split('@')[0]}\n`
+						members_id.push(mem.jid)
+					}
+					mentions('╔══🐊〘 OTAG|All 〙🐊══'+teks+'╚═🐊〘 Hiks Bot 〙', members_id, true)
+					break
 				case 'clearall':
 					if (!isOwner) return reply(ind.ownerb())
 					anu = await client.chats.all()
@@ -1287,7 +1323,7 @@ client.on('group-participants-update', async (anu) => {
             case 'owner':
             case 'creator':
                   client.sendMessage(from, {displayname: "Jeff", vcard: vcard}, MessageType.contact, { quoted: mek})
-                  client.sendMessage(from, 'Tuh nomer owner ku >_<, jangan spam atau ku block kamu',MessageType.text, { quoted: mek} )
+                  client.sendMessage(from, 'Tuh nomer owner ku >_<, jangan spam atau ku pacarin kamu akskaka canda pacar',MessageType.text, { quoted: mek} )
 					break    
            case 'setname':
                 if (!isGroup) return reply(ind.groupo())
