@@ -1,7 +1,7 @@
 {
   "name": "weabot",
   "version": "1.0.0",
-  "description": "weabot for whatsapp recommended with termux",
+  "description": "weabot for whatsapp online with termux",
   "main": "index.js",
   "directories": {
     "lib": "lib"
@@ -13,7 +13,7 @@
   "keywords": [
     "k"
   ],
-  "author": "HIKS",
+  "author": "affis junianto",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/H-I-K-S/weabot.git"
