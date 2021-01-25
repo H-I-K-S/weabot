@@ -34,17 +34,17 @@ const { removeBackgroundFromImageFile } = require('remove.bg')
 const { ind } = require('./language')
 const vcard = 'BEGIN:VCARD\n' 
             + 'VERSION:3.0\n' 
-            + 'FN:Affis Admin\n' 
-            + 'ORG: Pengembang XBot;\n' 
-            + 'TEL;type=CELL;type=VOICE;waid=6282334297175:+62 823-3429-7175\n' 
+            + 'FN:Fadhli\n' 
+            + 'ORG: @itspapoy;\n' 
+            + 'TEL;type=CELL;type=VOICE;waid=6287714745440:+62 877-1474-5440\n' 
             + 'END:VCARD' 
-prefix = '#'
+prefix = '.'
 blocked = []   
 limitawal = '20'
-cr = '*BOT INI SUDAH TERVERIFIKASI*'
+cr = '*BOT IS VERIFIED*'
 
 /******** OWNER NUMBER**********/
-const ownerNumber = ["62895710073737@s.whatsapp.net","6282334297174@s.whatsapp.net"] 
+const ownerNumber = ["6287714745440@s.whatsapp.net","6287714745440@s.whatsapp.net"] 
 /************************************/
 
        
@@ -253,7 +253,7 @@ function kyun(seconds){
 const client = new WAConnection()
    client.on('qr', qr => {
    qrcode.generate(qr, { small: true })
-   console.log(color('[','white'),color('∆','red'),color(']','white'),color('qr already scan.subscribe','white'),color('YOU','red'),color('TUBE','white'),color('ampibi gaming','yellow'))
+   console.log(color('[','white'),color('!','red'),color(']','white'),color('QR CODE Ready Scan.Cepet','white'),color('GITHUB','greend'),color('BY','white'),color('H-I-K-S','green'))
 })
 
 client.on('credentials-updated', () => {
