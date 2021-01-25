@@ -1463,24 +1463,49 @@ case 'stiker':
 						teks += `[${no.toString()}] @${admon.split('@')[0]}\n`
 					}
 					mentions(teks, groupAdmins, true)
-					break
-				case 'toimg':
-				if (!isRegistered) return reply(ind.noregis())
-				if (!isQuotedSticker) return reply('𝗥𝗲𝗽𝗹𝘆/𝘁𝗮𝗴 𝘀𝘁𝗶𝗰𝗸𝗲𝗿 !')
-					reply(ind.wait())
+					break				
+                               case 'toimg':
+				        client.updatePresence(from, Presence.composing)
+                                        if (!isRegister) return reply(ind.noregis())
+					if (!isQuotedSticker) return reply('❌ reply stickernya um ❌')
+					reply(mess.wait)
 					encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 					media = await client.downloadAndSaveMediaMessage(encmedia)
 					ran = getRandom('.png')
 					exec(`ffmpeg -i ${media} ${ran}`, (err) => {
 						fs.unlinkSync(media)
-						if (err) return reply(ind.stikga())
+						if (err) return reply('❌ Gagal, pada saat mengkonversi sticker ke gambar ❌')
 						buffer = fs.readFileSync(ran)
-						client.sendMessage(from, buffer, image, {quoted: mek, caption: '𝗱𝗮?? 𝗷𝗮𝗱𝗶 '})
+						client.sendMessage(from, buffer, image, {quoted: mek, caption: '>//<'})
 						fs.unlinkSync(ran)
 					})
-					await limitAdd(sender)
 					break
-                 case 'simi':
+                                   case 'afk':
+                                        tels = body.slice(4)
+                                        if (args.length < 1) return reply('Kamu afk karena apa?')
+                                        if (!isRegister) return reply(ind.noregis())
+                                        var nom = mek.participant
+                                        const tag = {
+                                                text: `@${nom.split("@s.whatsapp.net")[0]} *Dia sedang AFK ${tels} jangan diganggu y*`,
+                                                contextInfo: { mentionedJid: [nom] }
+                                        }
+                                        client.sendMessage(from, tag, text, {quoted: mek})
+                                        break
+           case 'playy':   
+	        if (!isRegister) return reply(ind.noregis())
+                if (isLimit(sender)) return reply(ind.limitend(pusname))
+                reply(mess.wait)
+                play = body.slice(5)
+                anu = await fetchJson(`https://api.zeks.xyz/api/ytplaymp3?q=${play}&apikey=apivinz`)
+                if (anu.error) return reply(anu.error)
+                infomp3 = `*Lagu Ditemukan!!!*\nJudul : ${anu.result.title}\nSource : ${anu.result.source}\nUkuran : ${anu.result.size}\n\n*TUNGGU SEBENTAR LAGI DIKIRIM MOHON JANGAN SPAM YA SAYANG*`
+                buffer = await getBuffer(anu.result.thumbnail)
+                lagu = await getBuffer(anu.result.url_audio)
+                client.sendMessage(from, buffer, image, {quoted: mek, caption: infomp3})
+                client.sendMessage(from, lagu, audio, {mimetype: 'audio/mp4', filename: `${anu.title}.mp3`, quoted: mek})
+                await limitAdd(sender)
+                break
+                                 case 'simi':
 					if (args.length < 1) return reply('Textnya mana um?')
 					teks = body.slice(5)
 					anu = await simih(teks) //fetchJson(`https://mhankbarbars.herokuapp.com/api/samisami?text=${teks}`, {method: 'get'})
