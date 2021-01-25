@@ -3,7 +3,7 @@ exports.wait = () => {
 }
 
 exports.succes = () => {
-	return`*「 SUCCES 」*`
+	return`*「 SUCCESS 」*`
 }
 
 exports.lvlon = () => {
@@ -35,7 +35,7 @@ exports.stikga = () => {
 }
 
 exports.linkga = () => {
-	return`*maaf link tidak valid*`
+	return`*Maaf link tidak valid*`
 }
 
 exports.groupo = () => {
