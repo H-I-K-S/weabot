@@ -91,160 +91,168 @@ exports.owneresce = (pushname) => {
 }
 
 exports.reglevelaha = (command, pushname, getLevelingLevel, sender, aha) => {
-	return`*Maaf ${pushname} level mu belum mencukupi*\n\n*┏⊱level mu : ${getLevelingLevel(sender)}*\n*┣⊱jenis command : ${command}*\n*┗⊱syarat level : ${aha}*\n\n_NOTE : CHAT/SELALU ON UNTUK MENDAPATKAN XP_`
+	return`*Maaf ${pushname} level mu belum mencukupi*\n\n*╭──❍Level mu : ${getLevelingLevel(sender)}*\n*├❍Jenis command : ${command}*\n*╰─❍Syarat level : ${aha}*\n\n_NOTE : CHAT/SELALU ON UNTUK MENDAPATKAN XP_`
 }
 
 exports.reglevelahb = (command, pushname, getLevelingLevel, sender, ahb) => {
-	return`*Maaf ${pushname} level mu belum mencukupi*\n\n*┏⊱level mu : ${getLevelingLevel(sender)}*\n*┣⊱jenis command : ${command}*\n*┗⊱syarat level : ${ahb}*\n\n_NOTE : CHAT/SELALU ON UNTUK MENDAPATKAN XP_`
+	return`*Maaf ${pushname} level mu belum mencukupi*\n\n*╭──❍Level mu : ${getLevelingLevel(sender)}*\n*├❍Jenis command : ${command}*\n*╰─❍Syarat level : ${ahb}*\n\n_NOTE : CHAT/SELALU ON UNTUK MENDAPATKAN XP_`
 }
 
 exports.reglevelahc = (command, pushname, getLevelingLevel, sender, ahc) => {
-	return`*Maaf ${pushname} level mu belum mencukupi*\n\n*┏⊱level mu : ${getLevelingLevel(sender)}*\n*┣⊱jenis command : ${command}*\n*┗⊱syarat level : ${ahc}*\n\n_NOTE : CHAT/SELALU ON UNTUK MENDAPATKAN XP_`
+	return`*Maaf ${pushname} level mu belum mencukupi*\n\n*╭──❍Level mu : ${getLevelingLevel(sender)}*\n*├❍Jenis command : ${command}*\n*╰─❍Syarat level : ${ahc}*\n\n_NOTE : CHAT/SELALU ON UNTUK MENDAPATKAN XP_`
 }
 
 exports.reglevelahd = (command, pushname, getLevelingLevel, sender, ahd) => {
-	return`*Maaf ${pushname} level mu belum mencukupi*\n\n*┏⊱level mu : ${getLevelingLevel(sender)}*\n*┣⊱jenis command : ${command}*\n*┗⊱syarat level : ${ahd}*\n\n_NOTE : CHAT/SELALU ON UNTUK MENDAPATKAN XP_`
+	return`*Maaf ${pushname} level mu belum mencukupi*\n\n*╭──❍Level mu : ${getLevelingLevel(sender)}*\n*├❍Jenis command : ${command}*\n*╰─❍Syarat level : ${ahd}*\n\n_NOTE : CHAT/SELALU ON UNTUK MENDAPATKAN XP_`
+
 }
 
 exports.reglevelahe = (command, pushname, getLevelingLevel, sender, ahe) => {
-	return`*Maaf ${pushname} level mu belum mencukupi*\n\n*┏⊱level mu : ${getLevelingLevel(sender)}*\n*┣⊱jenis command : ${command}*\n*┗⊱syarat level : ${ahe}*\n\n_NOTE : CHAT/SELALU ON UNTUK MENDAPATKAN XP_`
+	return`*Maaf ${pushname} level mu belum mencukupi*\n\n*╭──❍Level mu : ${getLevelingLevel(sender)}*\n*├❍Jenis command : ${command}*\n*╰─❍Syarat level : ${ahe}*\n\n_NOTE : CHAT/SELALU ON UNTUK MENDAPATKAN XP_`
 }
 
 exports.reglevelahf = (command, pushname, getLevelingLevel, sender, ahf) => {
-	return`*Maaf ${pushname} level mu belum mencukupi*\n\n*┏⊱level mu : ${getLevelingLevel(sender)}*\n*┣⊱jenis command : ${command}*\n*┗⊱syarat level : ${ahf}*\n\n_NOTE : CHAT/SELALU ON UNTUK MENDAPATKAN XP_`
+	return`*Maaf ${pushname} level mu belum mencukupi*\n\n*╭──❍Level mu : ${getLevelingLevel(sender)}*\n*├❍Jenis command : ${command}*\n*╰─❍Syarat level : ${ahf}*\n\n_NOTE : CHAT/SELALU ON UNTUK MENDAPATKAN XP_`
 }
 
 exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp, _registered, uangku) => { 
 	return `
-╭══─⊱ ❰ *ABOUT USER* ❱ ⊰─══
-╠☞ *Nama* : ${pushname}
-╠☞ *Nomer* : wa.me/${sender.split("@")[0]}
-╠☞ *Uang mu* : Rp${uangku}
-╠☞ *XP* : ${getLevelingXp(sender)}/${reqXp}
-╠☞ *Level* : ${getLevelingLevel(sender)}
-╠☞ *User register* : ${_registered.length}
-╰════─⊱  ⸨ *AFFIS* ⸩  ⊰─════╯
+╭─────「°❀ *ABOUT USER* ❀°」
+├❍ *Nama*          : ${pushname}
+├❍ *Nomer*         : wa.me/${sender.split("@")[0]}
+├❍ *UangKamoh*     : Rp${uangku}
+├❍ *XP*            : ${getLevelingXp(sender)}/${reqXp}
+├❍ *Level*         : ${getLevelingLevel(sender)}
+├❍ *User Register* : ${_registered.length}
+╰────────  「 *Hiks Bot* 」  ─────────╯
 
-            𝐑𝐮𝐥𝐞𝐬 - 𝐒𝐢𝐦𝐩𝐥𝐞
-▬▭▬▭▬▭▬▭▬▭▬▭▬
-●⧐ *Spam : Auto Block!*
-●⧐ *Beri Jeda 5detik Saat Menggunakannya!!*
-●⧐ *Bug/Error Harap Cht Owner!*
-●⧐ *Untuk Memastikan Bot Off Atau On*
-●⧐ *Ketik ${prefix}bot*
-●⧐ *Harap Sabar Dengan Bug²nya!*
-●⧐ *Gunakan Bot Sebaik-baiknya!*
-▬▭▬▭▬▭▬▭▬▭▬▭▬
+╭◪ 𝐑𝐮𝐥𝐞𝐬𝐒 *Hiks BOT*
+╰───────────────────
+├❍⧐ *Spam : Auto Block!*
+├❏⧐ *Setidaknya Beri Jeda 5 Detik Penggunaan!*
+├❍⧐ *Bug/Error Harap Chat Owner!*
+├❏⧐ *Mohon Bersabar Dengan Bug²nya!*
+├❍⧐ *Gunakan Bot Dengan Sebaik-baiknya!*
+╰─────────────────────────────
 
-╭══─⊱ ❰ *MAKER MENU* ❱ ⊰─══➤
-╠☞ *${prefix}sticker*
-╠☞ *${prefix}vinta*
-╠☞ *${prefix}avengers*
-╠☞ *${prefix}summer*
-╠☞ *${prefix}sandwrite*
-╠☞ *${prefix}metaldark*
-╠☞ *${prefix}dropwater*
-╠☞ *${prefix}greenneon*
-╠☞ *${prefix}neontext*
-╠☞ *${prefix}sumery*
-╠☞ *${prefix}blood*
-╠☞ *${prefix}firework*
-╠☞ *${prefix}lava*
-║
-╠══─⊱ ❰ *FUN MENU* ❱ ⊰─════➤
-╠☞ *${prefix}mining*
-╠☞ *${prefix}bisakah*
-╠☞ *${prefix}kapankah*
-╠☞ *${prefix}apakah*
-╠☞ *${prefix}rate*
-╠☞ *${prefix}slap*
-╠☞ *${prefix}tampar*
-╠☞ *${prefix}speed*
-║
-╠══─⊱ ❰ *MEDIA MENU* ❱ ⊰─═══➤
-╠☞ *${prefix}toxic*
-╠☞ *${prefix}quotes*
-╠☞ *${prefix}beritahoax*
-╠☞ *${prefix}brainly*
-╠☞ *${prefix}pinterest*
-╠☞ *${prefix}resepmasakan*
-╠☞ *${prefix}igstalk*
-║
-╠══─⊱ ❰ *LIMIT MENU* ❱ ⊰─═══➤
-╠☞ *${prefix}limit*
-╠☞ *${prefix}buylimit*
-╠☞ *${prefix}dompet*
-║
-╠══─⊱ ❰ *NSFW MENU* ❱ ⊰─═══➤
-╠☞ *${prefix}pokemon*
-╠☞ *${prefix}anjing*
-╠☞ *${prefix}1cak*
-║
-╠══─⊱ ❰ *GROUP MENU* ❱ ⊰─══➤
-╠☞ *${prefix}hidetag*
-╠☞ *${prefix}grouplist*
-╠☞ *${prefix}limit*
-╠☞ *${prefix}level*
-╠☞ *${prefix}linkgc*
-╠☞ *${prefix}tagall*
-╠☞ *${prefix}setpp*
-╠☞ *${prefix}add*
-╠☞ *${prefix}kick*
-╠☞ *${prefix}setname*
-╠☞ *${prefix}setdesc*
-╠☞ *${prefix}demote*
-╠☞ *${prefix}promote*
-╠☞ *${prefix}listadmin*
-╠☞ *${prefix}group* [buka/tutup]
-╠☞ *${prefix}leveling* [enable/disable]
-╠☞ *${prefix}nsfw* [1/0]
-╠☞ *${prefix}simih* [1/0]
-╠☞ *${prefix}welcome* [1/0]
-║
-╠══─⊱ ❰ *OWNER MENU* ❱ ⊰─══➤
-╠☞ *${prefix}bc*
-╠☞ *${prefix}bcgc*
-╠☞ *${prefix}kickall*
-╠☞ *${prefix}setreply*
-╠☞ *${prefix}setprefix*
-╠☞ *${prefix}clearall*
-╠☞ *${prefix}block*
-╠☞ *${prefix}unblock*
-╠☞ *${prefix}leave*
-╠☞ *${prefix}event* [1/0]
-╠☞ *${prefix}clone*
-╠☞ *${prefix}setppbot*
-║
-╠══─⊱ ❰ *THANGKS TO* ❱ ⊰─══➤
-║
-╠☞ *AFFIS JUNIANTO*
-╠☞ *FADHIL GRAPHY*
-╠☞ *XPTN (AGUNG)*
-╠☞ *MYBOT TEAM*
-║
-╰════─⊱  ⸨ *AFFIS* ⸩  ⊰─════╯
+╭◪ 𝐋𝐈𝐒𝐓 𝐌𝐄𝐍𝐔
+├❍ Perintah/Command : 「 ${prefix} 」
+├❍ Limit All User    :  20
+├❍ Harap Jangan menSpam BOT.
+├❍ Inget beri jeda 5 Detik.
+╰──────────────────
+
+╭──「 *MAKER MENU*」❍──
+├❍ *${prefix}sticker*
+├❍ *${prefix}vinta*
+├❍ *${prefix}avengers*
+├❍ *${prefix}summer*
+├❍ *${prefix}sandwrite*
+├❍ *${prefix}metaldark*
+├❍ *${prefix}dropwater*
+├❍ *${prefix}greenneon*
+├❍ *${prefix}neontext*
+├❍ *${prefix}sumery*
+├❍ *${prefix}blood*
+├❍ *${prefix}firework*
+├❍ *${prefix}lava*
+╰───────────────────
+
+╭──「 *FUN MENU*」❍──
+├❍ *${prefix}mining*
+├❍ *${prefix}bisakah*
+├❍ *${prefix}kapankah*
+├❍ *${prefix}apakah*
+├❍ *${prefix}rate*
+├❍ *${prefix}slap*
+├❍ *${prefix}tampar*
+├❍ *${prefix}speed*
+╰───────────────────
+
+╭──「 *MEDIA MENU*」❍──
+├❍ *${prefix}toxic*
+├❍ *${prefix}quotes*
+├❍ *${prefix}beritahoax*
+├❍ *${prefix}brainly*
+├❍ *${prefix}pinterest*
+├❍ *${prefix}resepmasakan*
+├❍ *${prefix}igstalk*
+╰───────────────────
+
+╭──「 *LIMIT MENU*」❍──
+├❍ *${prefix}limit*
+├❍ *${prefix}buylimit*
+├❍ *${prefix}dompet*
+╰───────────────────
+
+╭──「 *NSFW MENU*」❍──
+├❍ *${prefix}pokemon*
+├❍ *${prefix}anjing*
+├❍ *${prefix}1cak*
+╰───────────────────
+
+╭──「 *GROUP MENU*」❍──
+├❍ *${prefix}hidetag*
+├❍ *${prefix}grouplist*
+├❍ *${prefix}limit*
+├❍ *${prefix}level*
+├❍ *${prefix}linkgc*
+├❍ *${prefix}tagall*
+├❍ *${prefix}setpp*
+├❍ *${prefix}add*
+├❍ *${prefix}kick*
+├❍ *${prefix}setname*
+├❍ *${prefix}setdesc*
+├❍ *${prefix}demote*
+├❍ *${prefix}promote*
+├❍ *${prefix}listadmin*
+├❍ *${prefix}group* [buka/tutup]
+├❍ *${prefix}leveling* [enable/disable]
+├❍ *${prefix}nsfw* [1/0]
+├❍ *${prefix}simih* [1/0]
+├❍ *${prefix}welcome* [1/0]
+╰───────────────────
+
+╭──「 *OWNER MENU*」❍──
+├❍ *${prefix}bc*
+├❍ *${prefix}bcgc*
+├❍ *${prefix}kickall*
+├❍ *${prefix}setreply*
+├❍ *${prefix}setprefix*
+├❍ *${prefix}clearall*
+├❍ *${prefix}block*
+├❍ *${prefix}unblock*
+├❍ *${prefix}leave*
+├❍ *${prefix}event* [1/0]
+├❍ *${prefix}clone*
+├❍ *${prefix}setppbot*
+╰───────────────────
+╭─────「 *MUTUALAN?*」❍──
+├❍ instagram.com/itspapoy
+╰────  ⸨ *Hiks Bot* ⸩  ─────╯
 `
 }
 
 exports.levelup = (pushname, sender, getLevelingXp,  getLevel, getLevelingLevel) => {
 	return`
-*「 SELAMAT 」*
-┏⊱ *Nama* : ${pushname}
-┣⊱ *Nomer* : wa.me/${sender.split("@")[0]}
-┣⊱ *Xp* : ${getLevelingXp(sender)}
-┗⊱ *Level* : ${getLevel} ⊱ ${getLevelingLevel(sender)}
+╭──「°❀ 〘 SELAMAT 〙 ❀°」
+├❍ *Nama*  : ${pushname}
+├❍ *Nomer* : wa.me/${sender.split("@")[0]}
+├❍ *Xp*    : ${getLevelingXp(sender)}
+├❍ *Level* : ${getLevel} ❍ ${getLevelingLevel(sender)}
+╰──────────────
 `}
  
 exports.limitend = (pushname) => {
-	return`*maaf ${pushname} limit hari ini habis*\n*limit di reset setiap jam 24:00*`
+	return`*Maaf ${pushname} Limit Hari Ini Habis*\n*Limit di reset setiap jam 24:00*`
 }
 
 exports.limitcount = (limitCounts) => {
 	return`
 *「 LIMIT COUNT 」*
-sisa limit anda : ${limitCounts}
+Sisa Limit Kamu : ${limitCounts}
 
-NOTE : untuk mendapatkan limit. bisa lewat naik level atau buylimit`
+NOTE : Untuk mendapatkan Limit. Bisa lewat naik level atau buylimit`
 }
 
 exports.satukos = () => {
@@ -252,5 +260,5 @@ exports.satukos = () => {
 }
 
 exports.uangkau = (pushname, sender, uangkau) => {
-	return`*┏⊱ *「 ATM 」* ━┓\n┣⊱ *Nama* : ${pushname}\n┣⊱ *Nomer* : ${sender.split("@")[0]}\n┣⊱ *Uang* : ${uangkau}\n┗━━━━━━━━━━`
+	return`*╭──❍ *「 ATM 」* ❍──\n├❍ *Nama* : ${pushname}\n├❍ *Nomer* : ${sender.split("@")[0]}\n├❍ *Uang* : ${uangkau}\n╰────────────`
 }
