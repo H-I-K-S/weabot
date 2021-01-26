@@ -41,7 +41,7 @@ const vcard = 'BEGIN:VCARD\n'
 prefix = '.'
 blocked = []   
 limitawal = '20'
-cr = '*HIKS BOT IS VERIFIED*'
+cr = '*by Fadhli*'
 
 /******** OWNER NUMBER**********/
 const ownerNumber = ["6287714745440@s.whatsapp.net","16692094570@s.whatsapp.net"] 
@@ -277,7 +277,7 @@ client.on('group-participants-update', async (anu) => {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `[ *𝐒𝐞𝐥𝐚𝐦𝐚𝐭 𝐝𝐚𝐭𝐚𝐧𝐠 𝐝𝐢 𝐆𝐫𝐨𝐮𝐩 𝐲𝐠 𝐏𝐞𝐧𝐮𝐡 𝐃𝐫𝐚𝐦𝐚 ${mdata.subject}* ]\n*❉────────────❉*\n@${num.split('@')[0]} ɪɴᴛʀᴏ/ᴅɪᴋɪᴄᴋツ:\nᜰ꙰ꦿ➢𝐍𝐚𝐦𝐚:\nᜰ꙰ꦿ➢𝐔𝐦𝐮𝐫:\nᜰ꙰ꦿ➢𝐀𝐬𝐤𝐨𝐭:\nᜰ꙰ꦿ➢𝐂𝐰𝐤 𝐚𝐩𝐚 𝐂𝐰𝐤:\nᜰ꙰ꦿ➢𝐃𝐨𝐢??:\nᜰ꙰ꦿ➢𝐁𝐚𝐜𝐚 𝐃𝐞𝐬𝐜 𝐲𝐚𝐚 𝐚𝐭𝐰 𝐌𝐚𝐮 𝐝𝐢 𝐒𝐚𝐧𝐭𝐞𝐭? 𝐌𝐨𝐠𝐚 𝐛𝐞𝐭𝐚𝐡 𝐝𝐢 𝐠𝐫𝐮𝐩ツ\n*❉────────────❉*\nᜰ꙰ꦿ➢ᴮᵗʷ ˢᵛ ⁿᵒ ᴬᵈᵐⁱⁿ ˢᵐᵃ ᵇᵒᵗ ʸᵃᵃ ᵐᵃᵃᶜⁱ><`
+				teks = `*𝐒𝐞𝐥𝐚𝐦𝐚𝐭 𝐝𝐚𝐭𝐚𝐧𝐠 𝐝𝐢 𝐆𝐫𝐨𝐮𝐩 𝐲𝐠 𝐏𝐞𝐧𝐮𝐡 𝐃𝐫𝐚𝐦𝐚 ${mdata.subject}*\n*❉────────────❉*\n@${num.split('@')[0]} ɪɴᴛʀᴏ/ᴅɪᴋɪᴄᴋツ:\nᜰ꙰ꦿ➢𝐍𝐚𝐦𝐚:\nᜰ꙰ꦿ➢𝐔𝐦𝐮𝐫:\nᜰ꙰ꦿ➢𝐀𝐬𝐤𝐨𝐭:\nᜰ꙰ꦿ➢𝐂𝐰𝐤 𝐚𝐩𝐚 𝐂𝐰𝐤:\nᜰ꙰ꦿ➢𝐃𝐨𝐢??:\n𝐁𝐚𝐜𝐚 𝐃𝐞𝐬𝐜 𝐲𝐚𝐚 𝐚𝐭𝐰 𝐌𝐚𝐮 𝐝𝐢 𝐒𝐚𝐧𝐭𝐞𝐭? 𝐌𝐨𝐠𝐚 𝐛𝐞𝐭𝐚𝐡 𝐝𝐢 𝐠𝐫𝐮𝐩ツ\n*❉────────────❉*\nᜰ꙰ꦿ➢ᴮᵗʷ ˢᵛ ⁿᵒ ᴬᵈᵐⁱⁿ ˢᵐᵃ ᵇᵒᵗ ʸᵃᵃ ᵐᵃᵃᶜⁱ><`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			} else if (anu.action == 'remove') {
@@ -316,7 +316,7 @@ client.on('group-participants-update', async (anu) => {
 			const time = moment.tz('Asia/Jakarta').format('DD/MM HH:mm:ss')
 			const timi = moment.tz('Asia/Jakarta').add(30, 'days').calendar();
 			const timu = moment.tz('Asia/Jakarta').add(20, 'days').calendar();
-            body = (type === 'conversation' && mek.message.conversation.startsWith(prefix)) ? mek.message.conversation : (type == 'imageMessage') && mek.message.imageMessage.caption.startsWith(prefix) ? mek.message.imageMessage.caption : (type == 'videoMessage') && mek.message.videoMessage.caption.startsWith(prefix) ? mek.message.videoMessage.caption : (type == 'extendedTextMessage') && mek.message.extendedTextMessage.text.startsWith(prefix) ? mek.message.extendedTextMessage.text : ''
+                        body = (type === 'conversation' && mek.message.conversation.startsWith(prefix)) ? mek.message.conversation : (type == 'imageMessage') && mek.message.imageMessage.caption.startsWith(prefix) ? mek.message.imageMessage.caption : (type == 'videoMessage') && mek.message.videoMessage.caption.startsWith(prefix) ? mek.message.videoMessage.caption : (type == 'extendedTextMessage') && mek.message.extendedTextMessage.text.startsWith(prefix) ? mek.message.extendedTextMessage.text : ''
 			budy = (type === 'conversation') ? mek.message.conversation : (type === 'extendedTextMessage') ? mek.message.extendedTextMessage.text : ''
 			const command = body.slice(1).trim().split(/ +/).shift().toLowerCase()
 			const args = body.trim().split(/ +/).slice(1)
@@ -472,7 +472,7 @@ client.on('group-participants-update', async (anu) => {
 				case 'buylimit':
 				if (!isRegistered) return reply(ind.noregis())
 				payout = body.slice(10)
-				const koinPerlimit = 1000
+				const koinPerlimit = 999
 				const total = koinPerlimit * payout
 				if ( checkATMuser(sender) <= total) return reply(`Maaf uang kamu belum mencukupi. Silahkan Kumpulkan dulu dan Beli Nanti`)
 				if ( checkATMuser(sender) >= total ) {
