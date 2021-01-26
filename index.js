@@ -41,7 +41,7 @@ const vcard = 'BEGIN:VCARD\n'
 prefix = '.'
 blocked = []   
 limitawal = '20'
-cr = '*by Fadhli*'
+cr = '*HIKS BOT*'
 
 /******** OWNER NUMBER**********/
 const ownerNumber = ["6287714745440@s.whatsapp.net","16692094570@s.whatsapp.net"] 
