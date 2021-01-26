@@ -79,7 +79,7 @@ exports.pc = () => {
 }
 
 exports.registered = (namaUser, umurUser, serialUser, time, sender) => {
-	return`*「 DATA NEGARA 」*\n\nKamu sudah terdaftar dengan data \n\n╭──❍ Nama\n╰──❍ ${namaUser}\n╭──❍ Nomer\n╰──❍ wa.me/${sender.split("@")[0]}\n╭──❍ Umur\n╰──❍ ${umurUser}\n╭──❍ Waktu pendaftaran\n╰──❍ ${time}\n\n╭──❍ *SN* ❍──\n┣⊱${serialUser}\n╰──❍ NOTE : Jangan sampai lupa nomer nya karena itu penting:v`
+	return`*「 DATA NEGARA 」*\n\nKamu sudah terdaftar dengan data \n\n╭──❍ Nama\n╰──❍ ${namaUser}\n╭──❍ Nomer\n╰──❍ wa.me/${sender.split("@")[0]}\n╭──❍ Umur\n╰──❍ ${umurUser}\n╭──❍ Waktu pendaftaran\n╰──❍ ${time}\n\n╭──❍ *SN* ❍──\n├❍${serialUser}\n╰──❍ NOTE : Jangan sampai lupa nomer nya karena itu penting:v`
 }
 
 exports.cmdnf = (prefix, command) => {
@@ -170,8 +170,8 @@ exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp
 ├❍ *${prefix}kapankah*
 ├❍ *${prefix}apakah*
 ├❍ *${prefix}rate*
-├❍ *${prefix}slap*
-├❍ *${prefix}tampar*
+├❍ *${prefix}~slap~*
+├❍ *${prefix}~tampar~*
 ├❍ *${prefix}speed*
 ╰───────────────────
 
@@ -235,7 +235,7 @@ exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp
 ├❍ *${prefix}clone*
 ├❍ *${prefix}setppbot*
 ╰───────────────────
-╭─────「 *Gamaksa*」────
+╭─────「 *Mutualan*」────
 ├❍ instagram.com/itspapoy
 ╰────  ⸨ *Hiks Bot* ⸩  ─────╯
 `
