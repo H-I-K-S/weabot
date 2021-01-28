@@ -42,6 +42,7 @@ prefix = '.'
 blocked = []   
 limitawal = '20'
 cr = '*HIKS BOT*'
+nomcr = `16692094570@s.whatsapp.net`
 
 /******** OWNER NUMBER**********/
 const ownerNumber = ["6287714745440@s.whatsapp.net","16692094570@s.whatsapp.net"] 
